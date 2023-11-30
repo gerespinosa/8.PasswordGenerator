@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator | 100DaysOfJS</title>
+    <script src="main.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="upper">
+            <h3 class="title">Simply Password Generator</h3><br>
+            <div class="password" id="password"></div>
+            <button class="copyBtn" id="copyBtn">Copy</button>
+            <h4>Password length</h4>
+            <input type="number" name="passLength" id="passLength" max="8" placeholder="0">
+        </div>
+        <form class="passForm">
+            <li>
+                <input type="checkbox" name="numbersCheck" id="numbersCheck">
+                <h4>Numbers</h4>
+            </li>
+            <li>
+                <input type="checkbox" name="capitalsCheck" id="capitalsCheck">
+                <h4>Capital Letters</h4>
+            </li>
+            <li>
+                <input type="checkbox" name="smallsCheck" id="smallsCheck">
+                <h4>Small Letters</h4>
+            </li>
+            <li>
+                <input type="checkbox" name="symbolsCheck" id="symbolsCheck">
+                <h4>Symbols</h4>
+            </li>
+
+            <input type="submit" class="generateBtn" value="Generate Password" id="generateBtn">
+        </form>
+    </div>
+
+</body>
+
+</html>
