@@ -36,6 +36,9 @@ window.onload = () => {
         let randomSymbol = Math.floor(Math.random() * symbols.length);
         const randomizedSymbol = symbols[randomSymbol];
         password.innerText += randomizedSymbol;
+      } else {
+        //If there are not categories marked, the password will add an * symbol instead
+        password.innerText += "*";
       }
     }
 
